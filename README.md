@@ -10,7 +10,7 @@
 
 # RSS Finder Web App
 
-[Live App](https://rss-finder-web-app.vercel.app/)
+[Live App](https://rsswebfinder.web.app/)
 
 Web app to help you find URLs for existing RSS feeds from website URLs.
 

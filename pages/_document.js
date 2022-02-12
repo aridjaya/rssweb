@@ -30,17 +30,17 @@ class MyDocument extends Document {
           <link rel='shortcut icon' href='/icons/favicon.ico' />
 
           <meta name='twitter:card' content='summary' />
-          <meta name='twitter:url' content='https://rss-finder-web-app.vercel.app' />
+          <meta name='twitter:url' content='https://rsswebfinder.web.app' />
           <meta name='twitter:title' content='RSS Finder Web App' />
           <meta name='twitter:description' content='Web app to help you find URLs for existing RSS feeds from website URLs.' />
-          <meta name='twitter:image' content='https://rss-finder-web-app.vercel.app/icons/android-chrome-192x192.png' />
+          <meta name='twitter:image' content='https://rsswebfinder.web.app/icons/android-chrome-192x192.png' />
           <meta name='twitter:creator' content='@alexdevero' />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='RSS Finder Web App' />
           <meta property='og:description' content='Web app to help you find URLs for existing RSS feeds from website URLs.' />
           <meta property='og:site_name' content='RSS Finder Web App' />
-          <meta property='og:url' content='https://rss-finder-web-app.vercel.app' />
-          <meta property='og:image' content='https://rss-finder-web-app.vercel.app/icons/apple-touch-icon.png' />
+          <meta property='og:url' content='https://rsswebfinder.web.app' />
+          <meta property='og:image' content='https://rsswebfinder.web.app/icons/apple-touch-icon.png' />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
