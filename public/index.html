@@ -1,91 +1,82 @@
-<div align="center">
-  <img src="./docs/rss-icon.png" width="120" />
-</div>
+<!DOCTYPE html>
+<html>
 
-<p align="center">
-  <a href="https://david-dm.org/alexdevero/rss-finder-web-app"><img alt="Dependency Status" src="https://david-dm.org/alexdevero/rss-finder-web-app.svg?style=flat"></a>
-  <a href="https://david-dm.org/alexdevero/rss-finder-web-app?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdevero/rss-finder-web-app/dev-status.svg?style=flat"></a>
-  <a href="http://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/npm/l/express.svg"></a>
-</p>
+<head>
+    <meta name="application-name" content="RSS Finder Web App" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="RSS Finder Web App" />
+    <meta name="description" content="Web app to help you find URLs for existing RSS feeds from website URLs." />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#2B5797" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://rss-finder-web-app.vercel.app" />
+    <meta name="twitter:title" content="RSS Finder Web App" />
+    <meta name="twitter:description" content="Web app to help you find URLs for existing RSS feeds from website URLs." />
+    <meta name="twitter:image" content="https://rss-finder-web-app.vercel.app/icons/android-chrome-192x192.png" />
+    <meta name="twitter:creator" content="@alexdevero" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RSS Finder Web App" />
+    <meta property="og:description" content="Web app to help you find URLs for existing RSS feeds from website URLs." />
+    <meta property="og:site_name" content="RSS Finder Web App" />
+    <meta property="og:url" content="https://rss-finder-web-app.vercel.app" />
+    <meta property="og:image" content="https://rss-finder-web-app.vercel.app/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css" integrity="sha512-aqT9YD5gLuLBr6ipQAS+72o5yHKzgZbGxEh6iY8lW/r6gG14e2kBTAJb8XrxzZrMOgSmDqtLaF76T0Z6YY2IHg==" crossorigin="anonymous" />
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="next-head-count" content="2" />
+    <link rel="preload" href="/_next/static/css/ff8dd8425a9670db9c63.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/ff8dd8425a9670db9c63.css" data-n-g="" /><noscript data-n-css=""></noscript>
+    <link rel="preload" href="/_next/static/chunks/main-8ae171c11766cf40ad57.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/framework.e0302ea4b20101906496.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.ee8b69541334362bef1e.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/pages/_app-26d2fb4fcce8572d1b98.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/pages/index-f87dff3e0f08e6583829.js" as="script" />
+</head>
 
-# RSS Finder Web App
+<body>
+    <div id="__next">
+        <div class="container">
+            <div class="d-flex justify-content-end py-3"><button class="btn btn-link link-dark"><span class="h5 bi bi-lightbulb-fill"></span></button></div>
+            <div class="app-main-content row justify-content-center pt-5">
+                <div class="col-sm-10 col-md-7 col-lg-6 col-xl-5">
+                    <header class="mb-4"><img src="/images/rss-outlined-icon.svg" class="app-logo mx-auto d-block mb-4" alt="logo" width="100" />
+                        <h1 class="h3 text-center mb-4">RSS Finder</h1>
+                        <p>Enter the website URL, without &quot;http://&quot; or &quot;https://&quot;:</p>
+                    </header>
+                    <div class="input-group mb-4"><label for="urlInput" class="input-group-text"><i class="bi bi-link-45deg"></i></label><input type="text" name="urlInput" id="urlInput" class="form-control" placeholder="Website URL" aria-label="Website URL" aria-describedby="urlInput" value="" /></div>
+                    <div class="text-center mb-4"><button class="btn btn-primary">Get feed URLs</button></div>
+                </div>
+            </div>
+            <footer class="pb-3">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="me-3"><a href="https://github.com/alexdevero/rss-finder-web-app" target="_blank" rel="noopener noreferrer" class="link-secondary"><span class="h5 bi bi-github"></span></a></li>
+                    <li class="me-3"><a href="https://twitter.com/AlexDevero" target="_blank" rel="noopener noreferrer" class="link-secondary"><span class="h5 bi bi-twitter"></span></a></li>
+                    <li class="me-3"><a href="https://devero.io" target="_blank" rel="noopener noreferrer" class="link-secondary"><span class="h5 bi bi-globe"></span></a></li>
+                    <li class="me-3"><a href="https://paypal.me/alexdevero" target="_blank" rel="noopener noreferrer" class="link-secondary"><span class="h5 bi bi-wallet2"></span></a></li>
+                    <li><a href="https://buymeacoffee.com/alexdevero" target="_blank" rel="noopener noreferrer" class="link-secondary"><span class="h5 bi bi-cup-straw"></span></a></li>
+                </ul>
+                <p class="h6 font-weight-normal text-center pt-1">Created by
+                    <!-- --> <a href="https://devero.io" target="_blank" rel="noopener noreferrer" class="link-dark">Alex Devero</a>,
+                    <!-- --> <a href="https://devero.io" target="_blank" rel="noopener noreferrer" class="link-dark">Devero Corp.</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
 
-[Live App](https://rss-finder-web-app.vercel.app/)
-
-Web app to help you find URLs for existing RSS feeds from website URLs.
-
-### Table of contents
-
-* [Install](#install)
-* [Usage](#usage)
-* [Support this project](#support-this-project)
-* [Code of Conduct](#code-of-conduct)
-* [License](#license)
-
-### Install
-
-#### Clone this repo
-
-```bash
-git clone https://github.com/alexdevero/rss-finder-web-app.git
-```
-
-#### Install dependencies
-
-```bash
-npm install
-```
-
-or
-
-```bash
-yarn
-```
-
-### Usage
-
-#### Run the web app
-
-```bash
-npm run dev
-```
-
-or
-
-```bash
-yarn run dev
-```
-
-#### Build the web app
-
-```bash
-npm run build
-```
-
-or
-
-```bash
-yarn run build
-```
-
-### Support this project
-
-I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously,
-this takes time. You can use these projects in your applications *for free*! You can even change the source code and redistribute (even resell it).
-
-If you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
-
-- Starring and sharing the project
-- [![Donate](https://img.shields.io/badge/Donate-Paypal-brightgreen.svg?colorB=259cd2)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YKLGUUB34ASEL)—make one-time donations via PayPal.
-- [![Donate](https://img.shields.io/badge/Donate-Patreon-brightgreen.svg?colorB=f86213)](https://www.patreon.com/alexdevero)—set up monthly donation via Patreon and get interesting news about what I'm doing.
-- <img alt="bitcoin" src="https://img.shields.io/badge/Donate-Bitcoin-brightgreen.svg?colorB=fab915">—send bitcoins or ethereum to this address: `19jHGagJWeVvuNjN3kaBoAszXd9ea9gKzp`.
-
-Thank you!
-
-### Code of Conduct
-
-[Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
-
-### License
-
-MIT © [Alex Devero](https://alexdevero.com).
+</html>
