@@ -1,0 +1,100 @@
+html,
+body,
+#__next,
+#__next > .container {
+  min-height: 100vh;
+}
+
+#__next > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-main-content {
+  flex-grow: 1;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light mode styles */
+.mode-light {
+  background-color: #f8f9fa;
+}
+
+/* Dark mode styles */
+.mode-dark {
+  background-color: #363636;
+  color: rgba(255, 255, 255, .85);
+}
+
+.mode-dark .form-control,
+.mode-dark .input-group-text {
+  color: #eee;
+  background-color: #333;
+}
+
+.mode-dark ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(170, 170, 170, .7);
+}
+
+.mode-dark ::-moz-placeholder { /* Firefox 19+ */
+  color: rgb(170, 170, 170, .7);
+}
+
+.mode-dark :-ms-input-placeholder { /* IE 10+ */
+  color: rgb(170, 170, 170, .7);
+}
+
+.mode-dark :-moz-placeholder { /* Firefox 18- */
+  color: rgb(170, 170, 170, .7);
+}
+
+/* Loader styles */
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #d1e5e1;
+  animation: loader 1.2s cubic-bezier(0, .5, .5, 1) infinite;
+}
+
+.loader div:nth-child(1) {
+  left: 8px;
+  animation-delay: -.24s;
+}
+
+.loader div:nth-child(2) {
+  left: 32px;
+  animation-delay: -.12s;
+}
+
+.loader div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes loader {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
